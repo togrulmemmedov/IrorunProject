@@ -7,41 +7,13 @@
     font-size: 16px;
 }
 .container{
-    /* height: 100hv; */
     margin: 3.5rem auto;
     width: calc(100% - 244px);
     text-align: center;
     font-family: 'Work Sans';
 }
-/* Header start  */
-.logo{
-    width: 9.5rem;
-    height: 2.5rem;
-}
-.con , .home{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 10px;
-    margin-left: 1.5rem;
-}
-.con{
-    color: #222222;
-}
-.home{
-    color: #0082F3;
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.transition{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-.first{
+/* Article start  */
+.writing{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -53,10 +25,10 @@
     width: 50%;
     justify-content: center;
 }
-.title{
+.writing .title{
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 2.9rem;
     line-height: 4vw;
     text-align: left;
     margin-bottom: 2rem;
@@ -83,7 +55,7 @@
 }
 .stores{
     text-align: left;
-}
+} 
 @media screen and ( min-width: 767px) and (max-width: 1200px){
      .container{
         width: calc(100% - 144px);
@@ -98,13 +70,16 @@
 }
 @media screen and (min-width: 319px) and (max-width: 767px){
     *{
-        font-size: 8px;
+        font-size: 10px;
     }
     .right{
         margin-top: 5vw;
     }
-    .title{
-        line-height: 4rem;
+    .left{
+        margin-top: 3vw;
+    }
+    .writing .title{
+        line-height: 5.5vw;
     }
     .container{
         width: calc(100% - 100px);
@@ -112,13 +87,13 @@
     .left, .right{
         width: 100%;
     }
-    .first{
-        flex-direction: column;
+    .writing{
+        flex-direction: column-reverse;
     }
     .img_1{
         width: 25rem;
         height: auto;
     }
 }
-/* Header end */
+/* Article end */
 
