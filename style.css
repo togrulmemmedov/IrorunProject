@@ -13,7 +13,7 @@
     font-family: 'Work Sans';
 }
 /* Article start  */
-.writing{
+/* .writing{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,7 +120,7 @@
     color: #333333;
     text-align: center;
     line-height: 1.5rem; 
-}
+} */
 
 @media screen and ( min-width: 767px) and (max-width: 1200px){
      .container{
@@ -129,16 +129,16 @@
      *{
          font-size: 12px;
      }
-     .img_1{
+     /* .img_1{
         width: 25rem;
         height: auto;
-    }
-}
+    }*/
+} 
 @media screen and (min-width: 319px) and (max-width: 767px){
     *{
         font-size: 10px;
     }
-    .right{
+    /* .right{
         margin-top: 5vw;
     }
     .left{
@@ -146,11 +146,11 @@
     }
     .writing .title{
         line-height: 5.5vw;
-    }
+    } */
     .container{
         width: calc(100% - 100px);
     }
-    .left, .right{
+    /* .left, .right{
         width: 100%;
     }
     .writing{
@@ -165,7 +165,7 @@
     }
     .icon{
         transform: rotate(90deg);
-        }
+        } */
 }
 /* Article end */
 
