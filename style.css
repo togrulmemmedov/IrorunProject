@@ -31,6 +31,7 @@
     font-size: 2.9rem;
     line-height: 4vw;
     text-align: left;
+    color: #333333;
     margin-bottom: 2rem;
 
 } 
@@ -47,6 +48,7 @@
     line-height: 2.3rem;
     text-align: left;
     margin-bottom: 2rem;
+    color: #333333;
 } 
 .google, .ios{
     width: 9.5rem;
@@ -56,6 +58,17 @@
 .stores{
     text-align: left;
 } 
+.article_title{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.1rem;
+    text-align: center;
+    margin-top: 5vw;
+    color: #333333;
+}
+
 @media screen and ( min-width: 767px) and (max-width: 1200px){
      .container{
         width: calc(100% - 144px);
