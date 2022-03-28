@@ -8,9 +8,7 @@
     box-sizing: border-box;
     font-size: 16px;
 }
-
-.container {
-    /* height: 100hv; */
+.container{
     margin: 3.5rem auto;
     width: calc(100% - 244px);
     text-align: center;
@@ -54,7 +52,9 @@
     justify-content: space-between;
 }
 
-.first {
+.first ,
+/* Article start  */
+.writing{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -69,12 +69,14 @@
     justify-content: center;
 }
 
-.title {
+.title ,
+.writing .title{
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 2.9rem;
     line-height: 4vw;
     text-align: left;
+    color: #333333;
     margin-bottom: 2rem;
 }
 
@@ -93,18 +95,83 @@
     margin-bottom: 2rem;
 }
 
-.google,
-.ios {
+.google, .ios{
     width: 9.5rem;
     height: auto;
+    color: #333333;
+
 }
 
 .stores {
     text-align: left;
+} 
+.article_title{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.1rem;
+    text-align: center;
+    margin-top: 5vw;
+    color: #333333;
 }
 
-@media screen and ( min-width: 767px) and (max-width: 1200px) {
-    .container {
+.card{
+    width: 18rem;
+    height: 21.25rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px #B7B7B7;
+    border-radius: 0px;
+}
+.cards{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    width: 5rem;
+    height: 5rem;
+}
+.lent{
+    margin-top: 0;
+    width: 100%;
+    height: .75rem;
+}
+.blue{
+    background-color: #582EFF;
+}
+.orange{
+    background-color: #FF814A;;
+}
+.green{
+    background-color: #31C5A1;
+}
+.img_2{
+    margin-top: 2.3rem;
+    margin-bottom: 3rem;
+}
+.card_title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+.card_info{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+    line-height: 1.5rem; 
+}
+
+@media screen and ( min-width: 767px) and (max-width: 1200px){
+     .container{
         width: calc(100% - 144px);
     }
     * {
@@ -114,17 +181,77 @@
         width: 25rem;
         height: auto;
     }
+
+    .card{
+        width: 18rem;
+        height: 21.25rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px #B7B7B7;
+        border-radius: 0px;
+    }
+    .cards{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon{
+        width: 5rem;
+        height: 5rem;
+    }
+    .lent{
+        margin-top: 0;
+        width: 100%;
+        height: .75rem;
+    }
+    .blue{
+        background-color: #582EFF;
+    }
+    .orange{
+        background-color: #FF814A;;
+    }
+    .green{
+        background-color: #31C5A1;
+    }
+    .img_2{
+        margin-top: 2.3rem;
+        margin-bottom: 3rem;
+    }
+    .card_title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 2rem;
+    }
+    .card_info{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #333333;
+        text-align: center;
+        line-height: 1.5rem; 
+    }
 }
 
-@media screen and (min-width: 319px) and (max-width: 767px) {
-    * {
-        font-size: 8px;
+@media screen and (min-width: 319px) and (max-width: 767px){
+    *{
+        font-size: 9px;
     }
     .right {
         margin-top: 5vw;
     }
     .title {
         line-height: 4rem;
+    }
+    .left{
+        margin-top: 3vw;
+    }
+    .writing .title{
+        line-height: 5.5vw;
     }
     .container {
         width: calc(100% - 100px);
@@ -136,13 +263,21 @@
     .first {
         flex-direction: column;
     }
+    .writing{
+        flex-direction: column-reverse;
+    }
     .img_1 {
         width: 25rem;
         height: auto;
     }
+    .cards{
+        flex-direction: column;
+    }
+    .icon{
+        transform: rotate(90deg);
+    }
 }
+/* Article end */
 
 
 /* Header end */
-
-
